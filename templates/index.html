@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Home</title>
+</head>
+<body>
+    <header class="bg-slate-500 p-3">
+        <nav>
+            <div class="logo">Property</div>
+        </nav>
+    </header>
+    <div class="md:w-2/3 m-auto lg:w-2/4">
+        <div class="location">
+            <h3>Las vegas,Nevada,USA</h3>
+        </div>
+        
+        <form action="/" class="search md:flex md:justify-between px-3" method="get">
+            <div class="range m-auto md:m-0">
+                <div for="price">price</div>
+                <input class="" type="range" id="price" max="10000" min="10">
+            </div>
+            <div class="search sm:my-2">
+                <input name="search" class="p-1 drop-shadow-lg" type="text" name="" id="" placeholder="Where you want to visit">
+                <input class="cursor-pointer p-1 drop-shadow-lg border-2" type="submit" value="Search">
+            </div>
+            <input type="text" hidden>
+        </form>
+        <div class="float-right sm:my-2">
+            <select class="rounded-md p-2 drop-shadow-lg" name="" id="">
+                <option value="lth">Low to High</option>
+                <option value="htl">High to Low</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <div class="card block m-auto md:flex my-2 sm:width-full sm:height-[30vh]">
+            <div class="overflow-hidden" style="height:100%;">
+                <img class="object-cover" src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVuc3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="" >
+            </div>
+            <div class="px-7 py-3">
+                <h1>Title</h1>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam voluptates corrupti neque consequuntur libero ad, dolorem reiciendis repudiandae enim cupiditate dolore atque sunt, mollitia tempora odit optio maxime. Dolor, aperiam!</h4>
+                <button>Price $750 /Night</button>
+            </div>
+        </div>
+
+        <div class="card block m-auto md:flex my-2 sm:width-full sm:height-[30vh]">
+            <div class="overflow-hidden" style="height:100%;">
+                <img class="object-cover" src="https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGVuc3xlbnwwfHwwfHw%3D&w=1000&q=80" alt="" >
+            </div>
+            <div class="px-7 py-3">
+                <h1>Title</h1>
+                <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam voluptates corrupti neque consequuntur libero ad, dolorem reiciendis repudiandae enim cupiditate dolore atque sunt, mollitia tempora odit optio maxime. Dolor, aperiam!</h4>
+                <button>Price $750 /Night</button>
+            </div>
+        </div>
+
+        
+
+    
+</body>
+</html>
