@@ -14,6 +14,7 @@ class Property(models.Model):
     price = models.FloatField()
     location = models.ForeignKey(Location,on_delete=models.CASCADE)
 
+
     def __str__(self) -> str:
         return str(self.title)
 
