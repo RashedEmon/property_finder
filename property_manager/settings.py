@@ -120,6 +120,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = Path(BASE_DIR).joinpath("static")
 
+
+MEDIA_URL = Path(BASE_DIR).joinpath("img")
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
