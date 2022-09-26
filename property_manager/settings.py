@@ -9,6 +9,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
+
+from .config import DATABASES
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -72,17 +74,7 @@ WSGI_APPLICATION = 'property_manager.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': '0Q6BMN3DpTup5HSE4ku8',
-        'HOST': 'containers-us-west-31.railway.app',
-        'PORT': '6824',
-    }
-}
-
+DATABASES = DATABASES
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -128,5 +120,3 @@ MEDIA_ROOT = Path(BASE_DIR).joinpath("img")
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-

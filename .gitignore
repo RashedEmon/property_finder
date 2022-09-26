@@ -2,3 +2,5 @@ static
 img
 db.sqlite3
 .vscode
+*/__pycache__
+property_manager/config.py
