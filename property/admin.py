@@ -2,7 +2,7 @@ from django.contrib import admin
 
 
 
-from .models import Image,Location,Property
+from .models import Image,Location,Property,Label
 # Register your models here.
 
 
@@ -16,6 +16,6 @@ class LocationAdmin(admin.ModelAdmin):
 class PropertyAdmin(admin.ModelAdmin):
     list_display = ('title','description','price','location')
     
-
-
-
+@admin.register(Label)
+class LabelAdmin(admin.ModelAdmin):
+    list_display = ['title']
